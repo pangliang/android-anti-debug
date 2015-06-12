@@ -12,15 +12,11 @@ android {
         versionName "1.0"
 
         ndk {
-            moduleName "android_anti_debug" // <-- This is the name of my C++ module!
-            cFlags "-std=c++11 -pthread -fexceptions -frtti" // Define some macros
-            ldLibs "log", "z", "android", "atomic"       // Link with these libraries!
-            stl "gnustl_static"                        // Use shared stlport library
+            moduleName "android_anti_debug"
         }
     }
     sourceSets.main {
         jniLibs.srcDir 'src/main/jni' // <-- Set your folder here!
-        jni.srcDirs = []
     }
     productFlavors {
         x86 {
