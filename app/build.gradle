@@ -12,27 +12,14 @@ android {
         versionName "1.0"
 
         ndk {
-            moduleName "android_anti_debug"
-            cFlags "-std=c++11 -pthread -fexceptions -frtti" // Define some macros
-            ldLibs "log", "z", "android", "atomic"       // Link with these libraries!
-            stl "gnustl_static"                        // Use shared stlport library
+            moduleName "android-anti-debug"
+            cFlags "-std=c++11 -pthread -fexceptions -frtti"
+            ldLibs "log", "z", "android", "atomic"
+            stl "gnustl_static"
+            abiFilters "x86", "armeabi"
         }
     }
-    sourceSets.main {
-        jniLibs.srcDir 'src/main/jni' // <-- Set your folder here!
-    }
-    productFlavors {
-        x86 {
-            ndk {
-                abiFilter "x86"
-            }
-        }
-        arm {
-            ndk {
-                abiFilter "armeabi"
-            }
-        }
-    }
+
     buildTypes {
         release {
             minifyEnabled false
