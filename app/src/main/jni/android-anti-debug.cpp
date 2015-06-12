@@ -56,6 +56,7 @@ void thread_task(int n)
 }
 void anti_debug()
 {
+	LOGD("call anti_debug ......");
 //	ptrace(PTRACE_TRACEME, 0, 0, 0);
 	auto checkThread = std::thread(thread_task, 1);
 	checkThread.detach();
