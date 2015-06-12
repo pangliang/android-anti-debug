@@ -7,6 +7,9 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    static {
+        System.loadLibrary("android-anti-debug");
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

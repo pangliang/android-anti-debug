@@ -13,6 +13,9 @@ android {
 
         ndk {
             moduleName "android_anti_debug"
+            cFlags "-std=c++11 -pthread -fexceptions -frtti" // Define some macros
+            ldLibs "log", "z", "android", "atomic"       // Link with these libraries!
+            stl "gnustl_static"                        // Use shared stlport library
         }
     }
     sourceSets.main {
