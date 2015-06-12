@@ -1,3 +1,0 @@
-set solib-search-path ./obj/local/armeabi
-source /Volumes/f/server/android-ndk-r10c/prebuilt/common/gdb/common.setup
-directory /Volumes/f/server/android-ndk-r10c/platforms/android-9/arch-arm/usr/include /Volumes/f/server/android-ndk-r10c/sources/cxx-stl/gnu-libstdc++/4.9/include /Volumes/f/server/android-ndk-r10c/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include /Volumes/f/server/android-ndk-r10c/sources/cxx-stl/gnu-libstdc++/4.9/include/backward jni

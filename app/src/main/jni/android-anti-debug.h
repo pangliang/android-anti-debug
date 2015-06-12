@@ -11,7 +11,6 @@
 
 #include <jni.h>
 
-#define __cplusplus 201103L
 #ifdef __cplusplus
 extern "C" {
 #endif
